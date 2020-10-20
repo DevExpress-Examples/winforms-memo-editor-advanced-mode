@@ -54,12 +54,6 @@ Namespace MemoEditSample
         Public Overridable Property LinesCount() As Integer
         Public Overridable Property LineLength() As Integer
         Public Overridable Property WordWrap() As Boolean
-        Protected Sub OnScrollBarsChanged()
-            Me.RaisePropertyChanged(Function(x) x.ScrollBars)
-        End Sub
-        Protected Sub OnWordWrapChanged()
-            Me.RaisePropertyChanged(Function(x) x.WordWrap)
-        End Sub
         Protected Sub OnLinesCountChanged()
             UpdateText()
             Me.RaisePropertyChanged(Function(x) x.Use1K)
