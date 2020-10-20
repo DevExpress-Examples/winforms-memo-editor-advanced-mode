@@ -54,12 +54,6 @@ namespace MemoEditSample {
             get;
             set;
         }
-        protected void OnScrollBarsChanged() {
-            this.RaisePropertyChanged(x => x.ScrollBars);
-        }
-        protected void OnWordWrapChanged() {
-            this.RaisePropertyChanged(x => x.WordWrap);
-        }
         protected void OnLinesCountChanged() {
             UpdateText();
             this.RaisePropertyChanged(x => x.Use1K);
