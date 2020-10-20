@@ -42,15 +42,7 @@ Namespace MemoEditSample
             End Get
         End Property
         Public Overridable Property ScrollBars() As ScrollBars
-        Private privateText As String
         Public Overridable Property Text() As String
-            Get
-                Return privateText
-            End Get
-            Protected Set(ByVal value As String)
-                privateText = value
-            End Set
-        End Property
         Public Overridable Property LinesCount() As Integer
         Public Overridable Property LineLength() As Integer
         Public Overridable Property WordWrap() As Boolean
